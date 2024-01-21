@@ -1,0 +1,96 @@
+/* Add or update these styles in your src/index.css file */
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.login-container h1 {
+    margin-bottom: 2rem;
+}
+
+.login-container p {
+    margin-bottom: 1.5rem;
+}
+
+.login {
+    display: flex;
+    gap: 1rem; /* This adds space between the login buttons */
+}
+
+.login button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #676FFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.login button:hover {
+    background-color: #4B51E8;
+}
+
+.survey-card {
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.survey-card h4 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.survey-card-buttons {
+    display: flex;
+    gap: 0.75rem; /* This adds space between buttons in the cards */
+}
+
+.survey-card button, .survey-card-buttons button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #676FFF;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.survey-card button:hover, .survey-card-buttons button:hover {
+    background-color: #4B51E8;
+}
+
+/* You may also want to add some general styles for better overall spacing */
+
+.home-container {
+    padding: 2rem;
+}
+
+.survey-list {
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* If you want to adjust the navbar spacing */
+
+.navbar {
+    padding: 1rem 2rem;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 1rem;
+}

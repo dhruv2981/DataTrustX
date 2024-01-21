@@ -1,0 +1,28 @@
+.survey-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.survey-list-title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.survey-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.survey-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+@media (max-width: 768px) {
+    .survey-grid {
+        grid-template-columns: 1fr;
+    }
+}
