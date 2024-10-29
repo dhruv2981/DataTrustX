@@ -1,70 +1,82 @@
-# Getting Started with Create React App
+# DeForms
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+**DeForms** is a decentralized marketplace designed for buying, selling, and trading datasets represented as tokens. By tokenizing datasets, DeForms enhances data credibility, facilitates ownership tracking, and allows for efficient data exchange without the need for intermediaries. Initially, DeForms focuses on survey data, paving the way for scalable, tokenized data marketplaces.
 
-In the project directory, you can run:
+## Problem Statement
 
-### `npm start`
+Traditional data marketplaces often struggle with:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Trust and Data Ownership:** Users must rely on a central authority to manage their data, leading to potential misuse or lack of transparency.
+- **Data Quality and Authenticity:** It’s difficult to validate and ensure data provenance.
+- **Pricing and Value Assessment:** Determining the value of data is subjective and varies by use case.
+- **Transaction Inefficiencies:** Middlemen add costs and slow down transactions.
+- **Access and Control:** Users have limited autonomy over their data usage and sharing.
+- **Data Silos:** Data sources are fragmented, creating interoperability issues across platforms.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Solution
 
-### `npm test`
+DeForms addresses these challenges by leveraging decentralization, tokenization, and smart contracts:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Decentralization & Smart Contracts:** Eliminates intermediaries, automating transactions and licensing. Smart contracts provide transparent and secure transactions, ensuring trust.
+- **Tokenization of Datasets:** By representing datasets as unique NFTs, DeForms offers clear ownership and provenance tracking. Fractional ownership of these datasets further democratizes access to valuable information.
+- **Blockchain Interoperability:** Built on Rootstock, DeForms combines Ethereum’s smart contract functionality with Bitcoin’s network, enhancing security and cross-chain utility.
 
-### `npm run build`
+## Key Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **User Interface:** React provides a dynamic, responsive UI.
+- **Blockchain Interaction:** Ether.js facilitates smooth communication with Ethereum, enabling seamless smart contract interaction and wallet integration.
+- **Account Abstraction:** Powered by Privy SDK, onboarding is smooth for both crypto-savvy and non-crypto users.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend:** React, Create React App
+- **Backend:** Supabase for scalable backend services
+- **Blockchain:** Rootstock (enables BTC and ETH interoperability)
+- **Smart Contracts:** Solidity
+- **Account Abstraction:** Privy SDK
+- **Blockchain Interface:** Ether.js
 
-### `npm run eject`
+## How to Get Started
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Install Dependencies:** Clone the repository and navigate to the project directory.
+   ```bash
+   npm install
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+2. **Run the App in Development Mode:**
+   ```bash
+   npm start
+   ```
+   Open http://localhost:3000 to view the app in your browser. The page will reload automatically on changes.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Run Tests:** Clone the repository and navigate to the project directory.
+   ```bash
+   npm test
+   ```
+   This command launches the test runner in interactive watch mode.
 
-## Learn More
+4. **Build for Production:**
+   ```bash
+   npm run build
+   ```
+   This command compiles the app into an optimized build, minifying files and adding hashes for version control. Output is saved to the build folder.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+5. **Custom Configuration::** If you need full control over the build configuration, use:
+   ```bash
+   npm run eject
+   ```
+   Note: This is a one-way operation and will copy all configuration files and dependencies directly into your project.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Future Plans
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+DeForms aims to further enhance its capabilities with the following future developments:
 
-### Analyzing the Bundle Size
+- **Staking Capabilities:** Integration of staking mechanisms that leverage both BTC and ETH networks, allowing users to participate in staking and earn rewards.
+- **Support for Additional Data Types:** Expansion to support a variety of data types and datasets beyond survey data, broadening the marketplace’s scope.
+- **Cross-Chain Functionality:** Improved interoperability across blockchain networks, allowing seamless interactions between different chains and further enhancing the platform's flexibility.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+With these advancements, DeForms aspires to become the leading marketplace for tokenized, high-quality datasets, providing users with a trustworthy, efficient, and versatile platform for data transactions.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
